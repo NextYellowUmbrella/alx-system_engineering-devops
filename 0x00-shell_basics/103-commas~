@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -v | awk -v ORS=',' '{ if ($0 ~ /^[[:alnum:]]/) print $0; } END { print "\n"; }'
